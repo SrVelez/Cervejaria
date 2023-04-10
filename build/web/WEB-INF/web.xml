@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ServletCerveja</servlet-name>
+        <servlet-class>br.com.bean.ServletCerveja</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletAlterarCerveja</servlet-name>
+        <servlet-class>br.com.bean.ServletAlterarCerveja</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletDeletar</servlet-name>
+        <servlet-class>br.com.bean.ServletDeletar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletEditarCerveja</servlet-name>
+        <servlet-class>br.com.bean.ServletEditarCerveja</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletCerveja</servlet-name>
+        <url-pattern>/Cerveja.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletAlterarCerveja</servlet-name>
+        <url-pattern>/ServletAlterarCerveja</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletDeletar</servlet-name>
+        <url-pattern>/ServletDeletar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletEditarCerveja</servlet-name>
+        <url-pattern>/ServletEditarCerveja</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
